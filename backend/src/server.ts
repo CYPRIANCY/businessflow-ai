@@ -1,7 +1,8 @@
 import app from './app.js';
+import { env } from './config/env.js';
 
-const PORT = 3000;
+// const env.PORT = 3000;
 
-app.listen(PORT, () => {
-  console.log(`BusinessFlow AI server is running on port ${PORT}`);
+app.listen(env.PORT, () => {
+  console.log(`BusinessFlow AI server is running on port ${env.PORT}`);
 });
